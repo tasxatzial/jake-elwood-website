@@ -29,6 +29,10 @@ footer > *,
     order: -1;
 }
 
+header {
+    position: absolute;
+}
+
 .header-content {
     display: flex;
 }
@@ -38,6 +42,15 @@ a {
     font-weight: 700;
 }
 
+.main-section {
+    padding: 8em 0 3em;
+}
+
+.info-section,
+footer {
+    padding: 3em 0;
+}
+
 .primary-color {
     color: #FFE600;
 }
@@ -45,6 +58,10 @@ a {
 footer,
 .info-section {
     text-align: center;
+}
+
+.info-section-col {
+    margin-bottom: 1em;
 }
 
 h1 {
@@ -64,6 +81,11 @@ footer {
 
 .footer-copyright {
     font-size: 0.85rem;
+    margin-top: 4em;
+}
+
+.footer-social-links {
+    margin-bottom: 2em;
 }
 
 .nav-link {
