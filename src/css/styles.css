@@ -1,0 +1,32 @@
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(0px, 20rem)) minmax(1em, 1fr);
+}
+
+.main-section > *,
+.info-section > *,
+footer > *,
+.header-content {
+    grid-column: 2 / -2;
+}
+
+.footer-social-links {
+    order: -1;
+}
+
+.header-content {
+    display: flex;
+}
