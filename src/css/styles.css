@@ -8,6 +8,8 @@ html {
 
 body {
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -29,4 +31,45 @@ footer > *,
 
 .header-content {
     display: flex;
+}
+
+.primary-color {
+    color: #FFE600;
+}
+
+footer,
+.info-section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+footer {
+    background-color: #e2e2e2;
+    opacity: .6;
+}
+
+.footer-copyright {
+    font-size: 0.85rem;
+}
+
+.nav-link {
+    font-weight: 700;
+}
+
+.main-section {
+    color: white;
+    background-color: black;
+}
+
+.main-section-text {
+    font-size: 1.125rem;
 }
