@@ -13,6 +13,11 @@ body {
     margin: 0;
 }
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 .grid {
     display: grid;
     grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(0px, 20rem)) minmax(1em, 1fr);
@@ -45,7 +50,9 @@ nav {
     top: 0;
     right: 0;
     bottom: 0;
-    background: black;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
     transition: left 250ms;
 }
 
@@ -70,8 +77,16 @@ a {
 }
 
 .close-nav-btn {
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
     position: absolute;
+    border: 0;
+    margin-right: .7em;
+    padding: .5em;
+    align-self: flex-end;
 }
+
 
 .open-nav-btn {
     font-weight: 700;
@@ -83,6 +98,14 @@ a {
     margin-left: auto;
 }
 
+.open-nav-btn,
+.close-nav-btn {
+    cursor: pointer;
+}
+
+.current-page {
+    border-bottom: 1px solid #FFE600;
+}
 .main-section {
     padding: 8em 0 3em;
 }
@@ -98,7 +121,7 @@ footer {
 
 .logo-link {
     background-color: #FFE600;
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 footer,
@@ -139,6 +162,17 @@ footer {
 
 .nav-link {
     font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #FFE600;
+}
+
+.nav-link:active {
+    color: #b39358;
 }
 
 .main-section {
