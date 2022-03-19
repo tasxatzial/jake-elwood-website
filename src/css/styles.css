@@ -40,7 +40,7 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 nav {
@@ -76,25 +76,21 @@ a {
     font-weight: 700;
 }
 
-.close-nav-btn {
-    color: white;
-    background-color: black;
+.nav-btn {
     font-size: 1.5rem;
-    position: absolute;
-    border: 0;
-    margin-right: .7em;
-    padding: .5em;
-    align-self: flex-end;
-}
-
-
-.open-nav-btn {
     font-weight: 700;
-    font-size: 1.5rem;
     color: white;
     background-color: transparent;
     border: 0;
     padding: .5em;
+}
+
+.close-nav-btn {
+    grid-column: 2 / -2;
+    justify-self: end;
+}
+
+.open-nav-btn {
     margin-left: auto;
 }
 
