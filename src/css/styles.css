@@ -40,7 +40,28 @@ header {
 
 nav {
     position: fixed;
+    width: 100%;
     left: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    transition: left 250ms;
+}
+
+.navigation-open {
+    left: 0;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
 }
 
 a {
@@ -48,13 +69,17 @@ a {
     font-weight: 700;
 }
 
-.open-nav {
+.close-nav-btn {
+    position: absolute;
+}
+
+.open-nav-btn {
     font-weight: 700;
     font-size: 1.5rem;
-    padding: .5em;
     color: white;
     background-color: transparent;
     border: 0;
+    padding: .5em;
     margin-left: auto;
 }
 
@@ -97,6 +122,9 @@ h2 {
 
 footer {
     background-color: #e2e2e2;
+}
+
+.footer-main {
     opacity: .6;
 }
 
