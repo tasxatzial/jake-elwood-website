@@ -250,4 +250,18 @@ footer {
     .info-section-col:first-child {
         grid-column: 2 / span 1;
     }
+
+    footer {
+        text-align: left;
+    }
+
+    .footer-main {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    .footer-social-links {
+        grid-column: 4;
+        justify-self: end;
+    }
 }
