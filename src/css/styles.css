@@ -129,6 +129,15 @@ footer,
     margin-bottom: 1em;
 }
 
+.underline-title::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3px;
+    margin: .25em auto 0;
+    background-color: #FFE600;
+}
+
 h1 {
     font-size: 1.5rem;
     font-weight: 700;
