@@ -46,7 +46,7 @@ footer > *,
 
 .header-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 nav {
@@ -270,6 +270,8 @@ footer {
 .short-h1,
 .main-subtitle {
     text-align: center;
+    max-width: 35rem;
+    justify-self: center;
 }
 
 .main-subtitle {
@@ -278,11 +280,15 @@ footer {
 }
 
 .main-image {
-    margin: 0 auto 1em;
+    margin: 0 auto 2em;
 }
 
 .about-text-section {
     margin-bottom: 2em;
+}
+
+.about-text-section:last-child {
+    margin-bottom: 0;
 }
 
 .main-image {
@@ -368,6 +374,10 @@ form textarea {
 }
 
 @media screen and (min-width: 48rem) {
+    .logo-link {
+        padding-top: 2em;
+    }
+    
     .grid {
         grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0px, 18rem)) minmax(0px, 1fr);
         grid-column-gap: 3em;
