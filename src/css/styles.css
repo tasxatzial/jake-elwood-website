@@ -156,6 +156,16 @@ footer {
     margin-bottom: 2em;
 }
 
+.social-link {
+    font-size: 1.75rem;
+    color: black;
+    margin: 0 .5em 0;
+}
+
+.social-link:hover {
+    opacity: .6;
+}
+
 .nav-link {
     font-weight: 700;
     font-size: 3rem;
