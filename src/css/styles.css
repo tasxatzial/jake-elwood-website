@@ -143,10 +143,15 @@ footer,
 .underline-title::after {
     content: "";
     display: block;
-    width: 3rem;
+    width: 4rem;
     height: 3px;
-    margin: .25em auto 0;
     background-color: #FFE600;
+    margin-top: .25em;
+}
+
+.underline-title-home::after {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -228,6 +233,7 @@ footer {
 
 .main-container {
     padding: 2em 0;
+    background-color: white;
 }
 
 .main-container > * {
@@ -240,6 +246,18 @@ footer {
 
 .short-h1 {
     font-size: 2.5rem;
+    justify-self: center;
+}
+
+.short-h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.65em;
+    background-color: #FFE600;
+    margin-top: -0.75em;
+    margin-left: 0.3em;
+    
 }
 
 .short-h1,
