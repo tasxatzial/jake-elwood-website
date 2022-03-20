@@ -257,7 +257,6 @@ footer {
     background-color: #FFE600;
     margin-top: -0.75em;
     margin-left: 0.3em;
-    
 }
 
 .short-h1,
@@ -276,6 +275,11 @@ footer {
 
 .about-text-section {
     margin-bottom: 2em;
+}
+
+.main-image {
+    box-shadow: 7px 7px 0px -2px black,
+                12px 12px 0px -2px #FFE600;
 }
 
 @media screen and (min-width: 35rem) {
