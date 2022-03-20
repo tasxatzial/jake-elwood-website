@@ -241,4 +241,13 @@ footer {
     .main-section > * {
         margin-right: 2em;
     }
+    
+    .info-section-col {
+        margin-bottom: 0;
+        grid-column: span 1;
+    }
+    
+    .info-section-col:first-child {
+        grid-column: 2 / span 1;
+    }
 }
