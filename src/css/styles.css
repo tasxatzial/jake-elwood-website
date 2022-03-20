@@ -264,4 +264,24 @@ footer {
         grid-column: 4;
         justify-self: end;
     }
+
+    nav {
+        position: initial;
+        height: 100%;
+    }
+
+    .open-nav-btn,
+    .close-btn-container {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin: 0 2em;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
