@@ -357,6 +357,22 @@ footer {
         flex-direction: row;
         justify-content: flex-start;
     }
+
+    .main-image {
+        grid-column: 2;
+    }
+
+    .about-text-container {
+        grid-column: 3 / span 2;
+    }
+
+    .about-h2:first-child {
+        margin-top: 0;
+    }
+
+    .main-container {
+        padding: 3em 0;
+    }
 }
 
 @media screen and (min-width: 78rem) {
