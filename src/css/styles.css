@@ -35,7 +35,7 @@ footer > *,
     order: -1;
 }
 
-header {
+.header-home {
     width: 100%;
     position: absolute;
 }
@@ -220,6 +220,14 @@ footer {
 
 .btn:active {
     background-color: #b39358;
+}
+
+main > *{
+    grid-column: 2 / -2;
+}
+
+.header-about {
+    background-color: black;
 }
 
 @media screen and (min-width: 35rem) {
