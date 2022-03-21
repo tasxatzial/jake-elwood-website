@@ -95,6 +95,10 @@ img {
 
 /*=============== BUTTON ===============*/
 
+.nav-btn-container {
+    position: absolute;
+}
+
 .nav-btn {
     padding: .5em;
     border: 0;
@@ -160,7 +164,7 @@ a {
 
 .nav-link {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
     text-decoration: none;
 }
