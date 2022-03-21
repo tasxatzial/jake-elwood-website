@@ -4,7 +4,11 @@ A simple website about a company that offers SEO services. See it live [here](ht
 
 ## Implementation
 
-This project demonstrates the following concepts/techniques:
+This project was built with:
+
+* Plain HTML, CSS, Javascript.
+
+### Frontend
 
 * Responsive website (CSS grid, CSS flexbox).
 * Hamburger menu using plain CSS/javascript.
