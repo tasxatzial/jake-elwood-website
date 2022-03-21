@@ -53,6 +53,10 @@ h2 {
     background-color: white;
 }
 
+.black-bg {
+    background-color: black;
+}
+
 .underline-title::after {
     content: "";
     display: block;
@@ -262,13 +266,10 @@ footer,
     text-align: center;
 }
 
-header {
-    background-color: black;
-}
-
 .header-home {
     position: absolute;
     width: 100%;
+    background-color: transparent;
 }
 
 .header-content {
