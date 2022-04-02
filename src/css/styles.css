@@ -23,7 +23,7 @@ body {
 /*=============== JS ===============*/
 
 .navigation-open {
-    left: 0;
+    transform: translateX(-100%);
 }
 
 /*=============== MODIFYING ===============*/
@@ -292,7 +292,8 @@ nav {
     bottom: 0;
     width: 100%;
     background-color: black;
-    transition: left 250ms;
+    transform: translateX(0);
+    transition: transform 250ms;
 }
 
 .nav-list {
@@ -384,6 +385,12 @@ footer {
 }
 
 @media screen and (min-width: 48rem) {
+
+    /*=============== JS ===============*/
+
+    .navigation-open {
+        transform: translateX(0);
+    }
 
     /*=============== IMAGE ===============*/
 
