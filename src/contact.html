@@ -14,8 +14,8 @@
 <body>
     <header class="grid black-bg">
         <div class="header-content">
-            <a href="#" class="logo-link"><img src="img/logo.png" alt="jake & elwood logo"></a>
-            <button aria-label="Open navigation" class="nav-btn open-nav-btn" id="open-nav-btn">☰</button>
+            <a href="#" class="logo-link" tabindex="0"><img src="img/logo.png" alt="jake & elwood logo"></a>
+            <button aria-label="Open navigation" class="nav-btn open-nav-btn" id="open-nav-btn" tabindex="0">☰</button>
             <nav id="nav">
                 <div class="grid nav-btn-container">
                     <button aria-label="Close navigation" class="nav-btn close-nav-btn" id="close-nav-btn">✖</button>
@@ -38,12 +38,12 @@
         </div>
         <form class="contact-form" action="#" method="POST">
             <label class="form-label-fname" for="form-first-name">First Name</label>
-            <input class="form-input-fname" id="form-first-name">
+            <input class="form-input-fname" id="form-first-name" tabindex="0">
             <label class="form-label-lname" for="form-last-name">Last Name</label>
-            <input class="form-input-lname" id="form-last-name">
+            <input class="form-input-lname" id="form-last-name" tabindex="0">
             <label class="form-label-msg" for="form-message">Message</label>
-            <textarea class="form-input-msg" id="form-message"></textarea>
-            <button class="btn btn-form" type="submit">Send</button>
+            <textarea class="form-input-msg" id="form-message" tabindex="0"></textarea>
+            <button class="btn btn-form" type="submit" tabindex="0">Send</button>
         </form>
     </main>
     <footer class="grid container">
@@ -53,9 +53,9 @@
             <div class="footer-copyright">&copy; Jake&Elwood 2019</div>
         </div>
         <div class="footer-social-links">
-            <a href="www.facebook.com" class="social-link"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="www.twitter.com" class="social-link"><i class="fa-brands fa-twitter"></i></a>
-            <a href="www.instagram.com" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="www.facebook.com" class="social-link" tabindex="0"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="www.twitter.com" class="social-link" tabindex="0"><i class="fa-brands fa-twitter"></i></a>
+            <a href="www.instagram.com" class="social-link" tabindex="0"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
     <script src="js/script.js"></script>

@@ -73,6 +73,7 @@ img {
 }
 
 .close-nav-btn {
+    visibility: hidden;
     grid-column: 4;
     justify-self: end;
 }
@@ -122,6 +123,7 @@ a {
 }
 
 .nav-link {
+    visibility: hidden;
     font-weight: 700;
     font-size: 2rem;
     color: white;
@@ -415,6 +417,7 @@ footer {
     }
 
     .nav-link {
+        visibility: visible !important;
         margin: 0 2em;
         font-size: 1.1rem;
     }
