@@ -32,6 +32,10 @@ body {
     visibility: hidden !important;
 }
 
+.visible {
+    visibility: visible !important;
+}
+
 .stop-scrolling {
     overflow: hidden;
     height: 100%;
@@ -77,6 +81,7 @@ img {
 }
 
 .close-nav-btn {
+    visibility: hidden;
     grid-column: 4;
     justify-self: end;
 }
@@ -126,6 +131,7 @@ a {
 }
 
 .nav-link {
+    visibility: hidden;
     font-weight: 700;
     font-size: 2rem;
     color: white;
@@ -390,12 +396,6 @@ footer {
 
 @media screen and (min-width: 48rem) {
 
-    /*=============== JS ===============*/
-
-    .navigation-open {
-        transform: translateX(0);
-    }
-
     /*=============== IMAGE ===============*/
 
     .main-image {
@@ -404,7 +404,8 @@ footer {
 
     /*=============== BUTTON ===============*/
 
-    .open-nav-btn {
+    .open-nav-btn,
+    .close-nav-btn {
         display: none;
     }
 
@@ -419,7 +420,7 @@ footer {
     }
 
     .nav-link {
-        visibility: visible !important;
+        visibility: visible;
         margin: 0 2em;
         font-size: 1.1rem;
     }
