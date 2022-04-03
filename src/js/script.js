@@ -4,29 +4,39 @@ const nav = document.getElementById('nav');
 const focusable = document.querySelectorAll('[tabindex="0"]');
 const navLinks = nav.querySelectorAll('.nav-link');
 
+openNavBtn.addEventListener('click', openNav);
+closeNavBtn.addEventListener('click', closeNav);
+
 function setFocusable(val) {
     for (let i = 0; i < focusable.length; i++) {
         focusable[i].setAttribute('tabindex', val);
     }
 }
 
-function setNavMenuVisibility(visibility) {
-    closeNavBtn.style.visibility = visibility;
+function setMenuVisible() {
+    closeNavBtn.classList.remove('invisible');
     for (let i = 0; i < navLinks.length; i++) {
-        navLinks[i].style.visibility = visibility;
+        navLinks[i].classList.remove('invisible');
     }
 }
 
-openNavBtn.addEventListener('click', function() {
+function setMenuInvisible() {
+    closeNavBtn.classList.add('invisible');
+    for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.add('invisible');
+    }
+}
+
+function openNav() {
     nav.classList.add('navigation-open');
     document.body.classList.add('stop-scrolling');
-    setNavMenuVisibility('visible');
+    setMenuVisible();
     setFocusable('-1');
-});
+}
 
-closeNavBtn.addEventListener('click', function() {
+function closeNav() {
     nav.classList.remove('navigation-open');
     document.body.classList.remove('stop-scrolling');
-    setNavMenuVisibility('hidden');
+    setMenuInvisible();
     setFocusable('0');
-});
+}

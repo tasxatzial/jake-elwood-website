@@ -28,6 +28,10 @@ body {
 
 /*=============== MODIFYING ===============*/
 
+.invisible {
+    visibility: hidden !important;
+}
+
 .stop-scrolling {
     overflow: hidden;
     height: 100%;
@@ -73,7 +77,6 @@ img {
 }
 
 .close-nav-btn {
-    visibility: hidden;
     grid-column: 4;
     justify-self: end;
 }
@@ -123,7 +126,6 @@ a {
 }
 
 .nav-link {
-    visibility: hidden;
     font-weight: 700;
     font-size: 2rem;
     color: white;
