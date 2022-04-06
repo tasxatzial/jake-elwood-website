@@ -9,7 +9,7 @@ mqList.addEventListener('change', closeNavMqList);
 openNavBtn.addEventListener('click', openNav);
 closeNavBtn.addEventListener('click', closeNav);
 
-function setLinksVisible() {
+function setNavLinksVisible() {
     for (let i = 0; i < navLinks.length; i++) {
         navLinks[i].classList.remove('invisible');
         navLinks[i].classList.add('visible');
@@ -23,9 +23,9 @@ function setNavLinksInvisible() {
     }
 }
 
-function setTabFocusable(val) {
+function setTabFocusable() {
     for (let i = 0; i < tabFocusable.length; i++) {
-        tabFocusable[i].setAttribute('tabindex', val);
+        tabFocusable[i].setAttribute('tabindex', 0);
     }
 }
 
@@ -49,7 +49,7 @@ function openNav() {
     nav.classList.add('navigation-open');
     document.body.classList.add('stop-scrolling');
     setCloseNavBtnVisible();
-    setLinksVisible();
+    setNavLinksVisible();
     unsetTabFocusable();
 }
 
@@ -66,7 +66,7 @@ function closeNavMqList() {
         nav.classList.remove('navigation-open');
         document.body.classList.remove('stop-scrolling');
         setCloseNavBtnInvisible();
-        setLinksVisible();
+        setNavLinksVisible();
         setTabFocusable();
     } else {
         setNavLinksInvisible();
