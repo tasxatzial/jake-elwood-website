@@ -11,7 +11,8 @@ This project was built with:
 ### Frontend
 
 * Responsive website (CSS grid, CSS flexbox).
-* Hamburger menu using plain CSS/javascript.
+* aria-* atrributes for assistive technology.
+* Hamburger menu using plain CSS, javascript.
 * Mobile first design.
 
 ## Run locally
