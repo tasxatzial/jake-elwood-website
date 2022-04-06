@@ -2,6 +2,8 @@ const openNavBtn = document.getElementById('open-nav-btn');
 const nav = document.getElementById('nav');
 const navLinks = nav.querySelectorAll('.nav-link');
 const closeNavBtn = nav.querySelector('.close-nav-btn');
+const main = document.querySelector('main');
+const footer = document.querySelector('footer');
 const tabFocusable = document.querySelectorAll('[tabindex="0"]');
 const mqList = window.matchMedia("(min-width: 48rem)");
 
@@ -48,6 +50,8 @@ function setCloseNavBtnInvisible() {
 function openNav() {
     nav.classList.add('navigation-open');
     document.body.classList.add('stop-scrolling');
+    main.setAttribute('aria-hidden', 'true');
+    footer.setAttribute('aria-hidden', 'true');
     setCloseNavBtnVisible();
     setNavLinksVisible();
     unsetTabFocusable();
@@ -56,6 +60,8 @@ function openNav() {
 function closeNav() {
     nav.classList.remove('navigation-open');
     document.body.classList.remove('stop-scrolling');
+    main.setAttribute('aria-hidden', 'false');
+    footer.setAttribute('aria-hidden', 'false');
     setCloseNavBtnInvisible();
     setNavLinksInvisible();
     setTabFocusable();
@@ -63,11 +69,8 @@ function closeNav() {
 
 function closeNavMqList() {
     if (mqList.matches) {
-        nav.classList.remove('navigation-open');
-        document.body.classList.remove('stop-scrolling');
-        setCloseNavBtnInvisible();
+        closeNav();
         setNavLinksVisible();
-        setTabFocusable();
     } else {
         setNavLinksInvisible();
     }
