@@ -11,40 +11,17 @@ mqList.addEventListener('change', closeNavMqList);
 openNavBtn.addEventListener('click', openNav);
 closeNavBtn.addEventListener('click', closeNav);
 
-function setNavLinksVisible() {
+function toggleNavVisible() {
+    closeNavBtn.classList.toggle('visible');
     for (let i = 0; i < navLinks.length; i++) {
-        navLinks[i].classList.remove('invisible');
-        navLinks[i].classList.add('visible');
+        navLinks[i].classList.toggle('visible');
     }
 }
 
-function setNavLinksInvisible() {
-    for (let i = 0; i < navLinks.length; i++) {
-        navLinks[i].classList.remove('visible');
-        navLinks[i].classList.add('invisible');
-    }
-}
-
-function setTabFocusable() {
+function setTabFocusable(val) {
     for (let i = 0; i < tabFocusable.length; i++) {
-        tabFocusable[i].setAttribute('tabindex', 0);
+        tabFocusable[i].setAttribute('tabindex', val);
     }
-}
-
-function unsetTabFocusable() {
-    for (let i = 0; i < tabFocusable.length; i++) {
-        tabFocusable[i].setAttribute('tabindex', '-1');
-    }
-}
-
-function setCloseNavBtnVisible() {
-    closeNavBtn.classList.remove('invisible');
-    closeNavBtn.classList.add('visible');
-}
-
-function setCloseNavBtnInvisible() {
-    closeNavBtn.classList.remove('visible');
-    closeNavBtn.classList.add('invisible');
 }
 
 function openNav() {
@@ -52,9 +29,8 @@ function openNav() {
     document.body.classList.add('stop-scrolling');
     main.setAttribute('aria-hidden', 'true');
     footer.setAttribute('aria-hidden', 'true');
-    setCloseNavBtnVisible();
-    setNavLinksVisible();
-    unsetTabFocusable();
+    toggleNavVisible();
+    setTabFocusable("-1");
 }
 
 function closeNav() {
@@ -62,16 +38,12 @@ function closeNav() {
     document.body.classList.remove('stop-scrolling');
     main.setAttribute('aria-hidden', 'false');
     footer.setAttribute('aria-hidden', 'false');
-    setCloseNavBtnInvisible();
-    setNavLinksInvisible();
-    setTabFocusable();
+    toggleNavVisible();
+    setTabFocusable("0");
 }
 
 function closeNavMqList() {
-    if (mqList.matches) {
+    if (openNavBtn.getAttribute('tabindex') === '-1' && mqList.matches ) {
         closeNav();
-        setNavLinksVisible();
-    } else {
-        setNavLinksInvisible();
     }
 }
