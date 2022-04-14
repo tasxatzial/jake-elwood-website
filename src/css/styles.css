@@ -1,7 +1,6 @@
 :root {
     --main-color: #FFE600;
-    --btn-hover-color: #e9c121;
-    --btn-active-color: #b39358;
+    --btn-active-color: #BDDBD0;
 }
 
 html {
@@ -76,6 +75,14 @@ img {
     color: white;
 }
 
+.nav-btn:focus {
+    outline: 2px solid white;
+}
+
+.nav-btn:focus-visible {
+    outline: 2px dotted white;
+}
+
 .close-nav-btn {
     visibility: hidden;
     grid-column: 4;
@@ -96,14 +103,16 @@ img {
     border: 0;
     background-color: var(--main-color);
     color: black;
+    transition: transform .2s;
 }
 
 .btn-contact {
     justify-self: start;
 }
 
+.btn:focus,
 .btn:hover {
-    background-color: var(--btn-hover-color);
+    transform: scale(1.05);
 }
 
 .btn:active {
@@ -123,7 +132,7 @@ a {
 }
 
 .current-page {
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
 }
 
 .nav-link {
@@ -134,22 +143,28 @@ a {
     text-decoration: none;
 }
 
+.nav-link:focus,
 .nav-link:hover {
     color: var(--main-color);
-}
-
-.nav-link:active {
-    color: #b39358;
 }
 
 .social-link {
     margin: 0 .5em 0;
     font-size: 1.75rem;
     color: black;
+    transform: scale(1.0);
+}
+
+.fa-brands {
+    transition: transform .2s;
 }
 
 .social-link:hover {
     opacity: .6;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
 }
 
 /*=============== FORM ===============*/
@@ -173,11 +188,12 @@ form textarea,
 form input,
 form textarea {
     padding: 0.4em;
+    margin-bottom: .8em;
 }
 
-form input,
-form textarea {
-    margin-bottom: .8em;
+form input:focus,
+form textarea:focus {
+    outline: 2px solid black;
 }
 
 form textarea {
