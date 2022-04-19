@@ -25,16 +25,15 @@ body {
     transform: translateX(-100%);
 }
 
-/*=============== MODIFYING ===============*/
-
-.visible {
-    visibility: visible !important;
+.navigation-open .close-nav-btn {
+    visibility: visible;
 }
 
-.stop-scrolling {
-    overflow: hidden;
-    height: 100%;
+.navigation-open .nav-link {
+    visibility: visible;
 }
+
+/*=============== UTILITY ===============*/
 
 .accent-text {
     color: var(--main-color);
@@ -308,6 +307,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
+    z-index: 100;
     left: 100%;
     top: 0;
     right: 0;
