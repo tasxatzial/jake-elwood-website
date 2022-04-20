@@ -50,11 +50,11 @@ body {
 /*=============== IMAGE ===============*/
 
 img {
+    display: block;
     max-width: 100%;
 }
 
 .main-image {
-    margin: 0 auto 2em;
     box-shadow: 7px 7px 0px -2px black,
                 12px 12px 0px -2px var(--main-color);
 }
@@ -275,6 +275,11 @@ h2 {
     padding: 2em 0;
 }
 
+.main-image-container {
+    max-width: 60%;
+    margin: 0 auto 2em;
+}
+
 .home-hero-container > *,
 .container > *,
 .header-content {
@@ -408,12 +413,6 @@ footer {
 
 @media screen and (min-width: 48rem) {
 
-    /*=============== IMAGE ===============*/
-
-    .main-image {
-        grid-column: 2;
-    }
-
     /*=============== BUTTON ===============*/
 
     .open-nav-btn,
@@ -460,6 +459,11 @@ footer {
 
     .container {
         padding: 3em 0;
+    }
+
+    .main-image-container {
+        grid-column: 2;
+        max-width: 100%;
     }
 
     nav {
