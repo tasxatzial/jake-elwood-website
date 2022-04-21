@@ -280,6 +280,10 @@ h2 {
     margin: 0 auto 2em;
 }
 
+.footer-logo-container > img {
+    margin: 0 auto;
+}
+
 .home-hero-container > *,
 .container > *,
 .header-content {
@@ -464,6 +468,10 @@ footer {
     .main-image-container {
         grid-column: 2;
         max-width: 100%;
+    }
+
+    .footer-logo-container > img {
+        margin: 0;
     }
 
     nav {
