@@ -12,7 +12,7 @@ This project was built with:
 
 * Responsive website (CSS grid, CSS flexbox).
 * aria-* atrributes for assistive technology.
-* Hamburger menu using plain CSS, javascript.
+* Hamburger menu for mobile.
 * Mobile first design.
 
 ## Run locally
