@@ -13,8 +13,10 @@ mqList.addEventListener('change', function() {
 
 function openNav() {
     nav.classList.add('navigation-open');
+    openNavBtn.setAttribute('hidden', '');
 }
 
 function closeNav() {
     nav.classList.remove('navigation-open');
+    openNavBtn.removeAttribute('hidden');
 }
