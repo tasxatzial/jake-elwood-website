@@ -3,10 +3,6 @@
     --btn-active-color: #BDDBD0;
 }
 
-html {
-    font-size: 100%;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -52,11 +48,22 @@ body {
 img {
     display: block;
     max-width: 100%;
+    max-height: 100%;
 }
 
 .main-image {
     box-shadow: 7px 7px 0px -2px black,
                 12px 12px 0px -2px var(--main-color);
+}
+
+.main-image-container {
+    max-width: 90%;
+    max-height: 13em;
+    margin: 0 auto 2em;
+}
+
+.footer-logo-container > img {
+    margin: 0 auto;
 }
 
 /*=============== BUTTON ===============*/
@@ -126,7 +133,7 @@ a {
 }
 
 .logo-link {
-    padding-top: 1.5em;
+    padding-top: 2.2em;
     background-color: var(--main-color);
 }
 
@@ -236,7 +243,7 @@ h2 {
 .heavy-underline-title,
 .main-subtitle {
     justify-self: center;
-    max-width: 35rem;
+    max-width: 32em;
     text-align: center;
 }
 
@@ -268,20 +275,11 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(0px, 18rem)) minmax(1em, 1fr);
+    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(0px, 18em)) minmax(1em, 1fr);
 }
 
 .container {
     padding: 2em 0;
-}
-
-.main-image-container {
-    max-width: 60%;
-    margin: 0 auto 2em;
-}
-
-.footer-logo-container > img {
-    margin: 0 auto;
 }
 
 .home-hero-container > *,
@@ -340,10 +338,21 @@ nav {
 
 .home-info-col {
     margin-bottom: 1em;
+    text-align: center;
 }
 
 .home-info-col:last-child {
     margin-bottom: 0;
+}
+
+.home-info-col,
+.footer-main {
+    max-width: 32em;
+}
+
+footer,
+.home-info-container {
+    justify-items: center;
 }
 
 footer {
@@ -366,7 +375,7 @@ footer {
 
 /*************************************** HIGH RES ***************************************/
 
-@media screen and (min-width: 35rem) {
+@media screen and (min-width: 35em) {
 
     /*=============== FORM ===============*/
 
@@ -415,7 +424,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 52em) {
 
     /*=============== BUTTON ===============*/
 
@@ -429,10 +438,6 @@ footer {
     }
 
     /*=============== LINK ===============*/
-
-    .logo-link {
-        padding-top: 2em;
-    }
 
     .nav-link {
         visibility: visible;
@@ -457,7 +462,7 @@ footer {
     /*=============== CONTAINER ===============*/
 
     .grid {
-        grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0px, 18rem)) minmax(0px, 1fr);
+        grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0px, 18em)) minmax(0px, 1fr);
         grid-column-gap: 3em;
     }
 
@@ -526,7 +531,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 80em) {
     .home-hero-container {
         background-size: contain;
         background-repeat: no-repeat;
