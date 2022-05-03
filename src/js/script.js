@@ -6,17 +6,15 @@ const mqList = window.matchMedia("(min-width: 48rem)");
 openNavBtn.addEventListener('click', openNav);
 closeNavBtn.addEventListener('click', closeNav);
 mqList.addEventListener('change', function() {
-    if (mqList.matches && nav.classList.contains('navigation-open')) {
+    if (mqList.matches && document.body.classList.contains('js-nav-open')) {
         closeNav();
     }
 });
 
 function openNav() {
-    nav.classList.add('navigation-open');
-    openNavBtn.setAttribute('hidden', '');
+    document.body.classList.add('js-nav-open');
 }
 
 function closeNav() {
-    nav.classList.remove('navigation-open');
-    openNavBtn.removeAttribute('hidden');
+    document.body.classList.remove('js-nav-open');
 }

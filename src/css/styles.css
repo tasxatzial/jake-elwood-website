@@ -17,16 +17,20 @@ body {
 
 /*=============== JS ===============*/
 
-.navigation-open {
+.js-nav-open nav {
     transform: translateX(-100%);
 }
 
-.navigation-open .close-nav-btn {
+.js-nav-open .close-nav-btn {
     visibility: visible;
 }
 
-.navigation-open .nav-link {
+.js-nav-open .nav-link {
     visibility: visible;
+}
+
+.js-nav-open .open-nav-btn {
+    visibility: hidden;
 }
 
 /*=============== UTILITY ===============*/
