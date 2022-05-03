@@ -149,6 +149,7 @@ a {
 }
 
 .logo-link {
+    display: block;
     padding-top: 2.2em;
     background-color: var(--main-color);
 }
@@ -497,6 +498,7 @@ footer {
 
     nav {
         position: initial;
+        width: initial;
         height: 100%;
         background-color: transparent;
     }
