@@ -523,6 +523,7 @@ footer {
     .footer-main {
         grid-row: 1;
         grid-column: 2 / span 2;
+        margin-right: auto;
     }
 
     .footer-social-links {
