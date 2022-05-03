@@ -78,7 +78,7 @@ img {
     margin: 0 auto 2em;
 }
 
-.footer-logo-container > img {
+.footer-logo-img {
     margin: 0 auto;
 }
 
@@ -491,7 +491,7 @@ footer {
         max-width: 100%;
     }
 
-    .footer-logo-container > img {
+    .footer-logo-img {
         margin: 0;
     }
 
