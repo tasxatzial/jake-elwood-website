@@ -15,10 +15,10 @@
     <header class="grid header-home">
         <div class="header-content">
             <a href="index.html" class="logo-link"><img src="img/logo.png" alt="jake & elwood logo"></a>
-            <button aria-label="open navigation." aria-controls="nav" class="nav-btn open-nav-btn" id="open-nav-btn">☰</button>
+            <button aria-label="open navigation" aria-controls="nav" class="nav-btn open-nav-btn" id="open-nav-btn">☰</button>
             <nav id="nav">
                 <div class="grid nav-btn-container">
-                    <button aria-label="close navigation." aria-controls="nav" class="nav-btn close-nav-btn" id="close-nav-btn">✖</button>
+                    <button aria-label="close navigation" aria-controls="nav" class="nav-btn close-nav-btn" id="close-nav-btn">✖</button>
                 </div>
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link current-page">home</a></li>
@@ -49,12 +49,13 @@
             </div>
         </section>
     </main>
-    <footer class="grid container">
+    <footer class="grid container" aria-labelledby="footer-title">
+        <h2 id="footer-title" class="sr-only">contact</h2>
         <div class="footer-main">
             <div class="footer-logo-container">
-                <img src="img/logo.png" alt="jake & elwood logo">
+                <img src="img/logo.png" alt="">
             </div>
-            <p>Two brothers from Chicago that are just trying to pay back their debt by helping others with their SEO, SEM, and Content Marketing needs.</p>
+            <p><span class="sr-only">Jake & Elwood: </span>Two brothers from Chicago that are just trying to pay back their debt by helping others with their SEO, SEM, and Content Marketing needs.</p>
             <div class="footer-copyright">&copy; Jake&Elwood 2019</div>
         </div>
         <div class="footer-social-links">
