@@ -79,6 +79,7 @@ img {
 }
 
 .footer-logo-img {
+    max-width: 11.5em;
     margin: 0 auto;
 }
 
@@ -150,6 +151,7 @@ a {
 
 .logo-link {
     display: block;
+    max-width: 11.5em;
     padding-top: 2.2em;
     background-color: var(--main-color);
 }
@@ -443,6 +445,12 @@ footer {
 
 @media screen and (min-width: 52em) {
 
+    /*=============== IMAGE ===============*/
+
+    .footer-logo-img {
+        margin: 0;
+    }
+
     /*=============== BUTTON ===============*/
 
     .open-nav-btn,
@@ -490,10 +498,6 @@ footer {
     .main-image-container {
         grid-column: 2;
         max-width: 100%;
-    }
-
-    .footer-logo-img {
-        margin: 0;
     }
 
     nav {
