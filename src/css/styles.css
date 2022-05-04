@@ -98,14 +98,6 @@ img {
     color: white;
 }
 
-.nav-btn:focus {
-    outline: 2px solid white;
-}
-
-.nav-btn:focus-visible {
-    outline: 2px dotted white;
-}
-
 .close-nav-btn {
     visibility: hidden;
     grid-column: 4;
