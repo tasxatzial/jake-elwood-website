@@ -4,9 +4,10 @@ A simple website about a company that offers SEO services. See it live [here](ht
 
 ## Implementation
 
-This project was built with:
+This project uses:
 
 * Plain HTML, CSS, Javascript.
+* [:focus-visible polyfill](https://github.com/WICG/focus-visible).
 
 ### Frontend
 
