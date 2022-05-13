@@ -290,6 +290,10 @@ h2 {
 
 /*=============== CONTAINER ===============*/
 
+body > * {
+    min-width: 15em;
+}
+
 .grid {
     display: grid;
     grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(0px, 18em)) minmax(1em, 1fr);
