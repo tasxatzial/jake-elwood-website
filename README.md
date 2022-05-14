@@ -11,7 +11,7 @@ This project uses:
 
 ### Frontend
 
-* Responsive website (CSS grid, CSS flexbox).
+* Responsive website (CSS grid + flexbox).
 * aria-* atrributes for assistive technology.
 * Hamburger menu for mobile.
 * Mobile first design.
@@ -19,3 +19,9 @@ This project uses:
 ## Run locally
 
 Download the repo and open 'src/index.html' in your browser.
+
+## Screenshots
+
+* Original design: See [mockups](mockups/).
+
+* Final result -with improvements-: See [screenshots](screenshots/).
