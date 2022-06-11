@@ -43,6 +43,11 @@ body {
 
 /*=============== UTILITY ===============*/
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 .sr-only {
     position: absolute; 
     width: 1px;

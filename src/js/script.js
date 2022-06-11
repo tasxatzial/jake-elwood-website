@@ -29,9 +29,10 @@ nav.addEventListener('keydown', function(e) {
 });
 
 function openNav() {
-    document.body.classList.add('js-nav-open');
+    document.body.classList.add('js-nav-open', 'stop-scrolling');
 }
 
 function closeNav() {
-    document.body.classList.remove('js-nav-open');
+    document.body.classList.remove('js-nav-open', 'stop-scrolling');
+    openNavBtn.focus();
 }
