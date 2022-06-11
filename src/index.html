@@ -29,12 +29,14 @@
         </div>
     </header>
     <main>
-        <section class="grid home-hero-container" aria-label="Who we are.">
+        <div hidden id="home-title">home title.</div>
+        <section class="grid home-hero-container" aria-labelledby="home-title">
             <h1>The only marketing agency on <span class="accent-text">a mission from God</span>, fully dedicated to increase your web traffic.</h1>
             <p class="home-hero-text subtitle">We’re two brothers from Chicago that are trying to pay back our debt. We can help you with <strong>SEO, SEM content marketing</strong> and whatever else.</p>
             <a href="contact.html" class="btn btn-contact">contact us</a>
         </section>
-        <section class="grid container home-info-container white-bg" aria-label="Short info about us.">
+        <div hidden id="home-info">home info.</div>
+        <section class="grid container home-info-container white-bg" aria-labelledby="home-info">
             <div class="home-info-col">
                 <h2 class="underline-title underline-title-home">About Us</h2>
                 <p>We grew up in downtown Chicago, and we used to play in a band. <strong>Jake loves fried chicken</strong>, and <strong>Elwood loves dry white toast.</strong></p>
@@ -49,17 +51,17 @@
             </div>
         </section>
     </main>
+    <h2 hidden id="footer-title">contact.</h2>
     <footer class="grid container" aria-labelledby="footer-title">
-        <h2 id="footer-title" class="sr-only">contact</h2>
         <div class="footer-main">
             <img class="footer-logo-img" src="img/logo.png" alt="">
             <p><span class="sr-only">Jake & Elwood: </span>Two brothers from Chicago that are just trying to pay back their debt by helping others with their SEO, SEM, and Content Marketing needs.</p>
             <div class="footer-copyright">&copy; Jake&Elwood 2019</div>
         </div>
         <div class="footer-social-links">
-            <a href="https://facebook.com" class="social-link" aria-label="facebook."><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="https://twitter.com" class="social-link" aria-label="twitter."><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://instagram.com" class="social-link" aria-label="instagram."><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" class="social-link" aria-label="facebook"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://twitter.com" class="social-link" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com" class="social-link" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
     <script src="js/script.js"></script>
