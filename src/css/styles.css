@@ -87,12 +87,12 @@ img {
 
 .main-image-container {
     max-width: 90%;
-    max-height: 13em;
+    max-height: 13rem;
     margin: 0 auto 2em;
 }
 
 .footer-logo-img {
-    max-width: 11.5em;
+    max-width: 11.5rem;
     margin: 0 auto;
 }
 
@@ -157,7 +157,7 @@ a {
     display: flex;
     align-items: flex-end;
     height: 100%;
-    max-width: 11.5em;
+    max-width: 11.5rem;
     background-color: var(--main-color);
 }
 
@@ -301,7 +301,7 @@ body > * {
 
 .grid {
     display: grid;
-    grid-template-columns: minmax(1rem, 1fr) repeat(3, minmax(0px, 18rem)) minmax(1rem, 1fr);
+    grid-template-columns: minmax(1rem, 1fr) repeat(3, minmax(0px, 18em)) minmax(1rem, 1fr);
 }
 
 .container {

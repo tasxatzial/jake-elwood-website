@@ -2,7 +2,7 @@ const openNavBtn = document.getElementById('open-nav-btn');
 const nav = document.querySelector('nav');
 const closeNavBtn = nav.querySelector('.close-nav-btn');
 const navLinks = nav.querySelectorAll('.nav-link');
-const mqList = window.matchMedia("(min-width: 48rem)");
+const mqList = window.matchMedia("(min-width: 48em)");
 
 openNavBtn.addEventListener('click', openNav);
 closeNavBtn.addEventListener('click', closeNav);
