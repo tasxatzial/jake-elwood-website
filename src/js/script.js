@@ -29,10 +29,13 @@ nav.addEventListener('keydown', function(e) {
 });
 
 function openNav() {
-    document.body.classList.add('js-nav-open', 'stop-scrolling');
+    document.body.classList.add('js-nav-open');
+    if (document.documentElement.scrollHeight > document.documentElement.clientHeight) {
+        document.body.classList.add('js-no-scroll');
+    }
 }
 
 function closeNav() {
-    document.body.classList.remove('js-nav-open', 'stop-scrolling');
+    document.body.classList.remove('js-nav-open', 'js-no-scroll');
     openNavBtn.focus();
 }

@@ -17,6 +17,12 @@ body {
 
 /*=============== JS ===============*/
 
+body.js-no-scroll {
+    position: fixed;
+    overflow-y: scroll;
+    height: 100%;
+}
+
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
 }
@@ -42,11 +48,6 @@ body {
 }
 
 /*=============== UTILITY ===============*/
-
-.stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-}
 
 .sr-only {
     position: absolute; 
