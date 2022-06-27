@@ -33,6 +33,7 @@ function openNav() {
     if (document.documentElement.scrollHeight > document.documentElement.clientHeight) {
         document.body.classList.add('js-no-scroll');
     }
+    closeNavBtn.focus();
 }
 
 function closeNav() {
