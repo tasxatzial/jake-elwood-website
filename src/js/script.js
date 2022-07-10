@@ -13,6 +13,9 @@ mqList.addEventListener('change', function() {
 });
 
 nav.addEventListener('keydown', function(e) {
+    if (!document.body.classList.contains('js-nav-open')) {
+        return;
+    }
     if (e.key === 'Tab' || e.keyCode === 9) {
         if (e.shiftKey) {
             if (document.activeElement === closeNavBtn) {
