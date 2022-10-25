@@ -413,7 +413,10 @@ footer {
 
 .footer-social-links {
     order: -1;
+    display: flex;
+    padding: 0;
     margin-bottom: 2em;
+    list-style: none;
 }
 
 /*************************************** HIGH RES ***************************************/
