@@ -1,12 +1,12 @@
 # Jake & Elwood website
 
-A simple website about a company that offers SEO services.
+A simple website about an imaginary company that offers SEO services.
 
-See it live [here](https://tasxatzial.github.io/jake-elwood-website).
+See the live version [here](https://tasxatzial.github.io/jake-elwood-website).
 
 ## Implementation
 
-* Responsive website (CSS grid + flexbox).
+* Responsive website (grid + flexbox).
 * aria-* atrributes for assistive technology.
 * Mobile first design.
 
@@ -16,11 +16,12 @@ See it live [here](https://tasxatzial.github.io/jake-elwood-website).
 
 ## Dependencies
 
-* [:focus-visible polyfill](https://github.com/WICG/focus-visible).
+* [:focus-visible](https://github.com/WICG/focus-visible) polyfill.
+* [Font awesome](https://fontawesome.com/) icons.
 
 ## Run locally
 
-Download the repo and open 'src/index.html' in your browser.
+Download the repo and open 'src/index.html' in the browser.
 
 ## Screenshots
 
