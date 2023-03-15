@@ -266,7 +266,7 @@ h2 {
 .heavy-underline-title,
 .main-subtitle {
     justify-self: center;
-    max-width: 32em;
+    max-width: 32rem;
     text-align: center;
 }
 
@@ -297,12 +297,12 @@ h2 {
 /*=============== CONTAINER ===============*/
 
 body > * {
-    min-width: 15em;
+    min-width: 15rem;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: minmax(1rem, 1fr) repeat(3, minmax(0px, 18em)) minmax(1rem, 1fr);
+    grid-template-columns: minmax(1rem, 1fr) repeat(3, minmax(0px, 18rem)) minmax(1rem, 1fr);
 }
 
 .container {
@@ -390,7 +390,7 @@ nav {
 
 .home-info-col,
 .footer-main {
-    max-width: 32em;
+    max-width: 32rem;
 }
 
 footer,
@@ -515,7 +515,7 @@ footer {
 
     .grid {
         grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0px, 18rem)) minmax(0px, 1fr);
-        grid-column-gap: 3em;
+        grid-column-gap: 3rem;
     }
 
     .container {
