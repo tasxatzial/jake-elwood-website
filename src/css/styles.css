@@ -23,11 +23,13 @@ body.js-no-scroll {
     height: 100%;
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
+.js-focus-visible :focus:not(.focus-visible),
+:focus:not(:focus-visible) {
     outline: none;
 }
 
-.js-focus-visible .focus-visible {
+.js-focus-visible .focus-visible,
+:focus-visible {
     outline: 2px solid tomato;
 }
 
