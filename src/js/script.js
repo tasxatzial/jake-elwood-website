@@ -3,12 +3,11 @@ const openNavBtn = document.getElementById('open-nav-btn');
 const closeNavBtn = nav.querySelector('.close-nav-btn');
 const navLinks = nav.querySelectorAll('.nav-link');
 const mqList = window.matchMedia("(min-width: 52em)");
+let navShouldBeOpen = false;
 
 openNavBtn.addEventListener('click', openNav);
 closeNavBtn.addEventListener('click', closeNav);
-
-/* close the hamburger menu if it is open and the window exceeds the mqlist breakpoint */
-mqList.addEventListener('change', closeNavOnWindowResize);
+mqList.addEventListener('change', toggleNavOnResize);
 
 /* trap keyboard navigation inside menu when it is open */
 nav.addEventListener('keydown', navigateMenu);
@@ -43,10 +42,16 @@ function openNav() {
 function closeNav() {
     document.body.classList.remove('js-nav-open', 'js-no-scroll');
     openNavBtn.focus();
+    navShouldBeOpen = false;
 }
 
-function closeNavOnWindowResize() {
+function toggleNavOnResize() {
     if (mqList.matches && document.body.classList.contains('js-nav-open')) {
         closeNav();
+        navShouldBeOpen = true;
+        return;
+    }
+    if (navShouldBeOpen) {
+        openNav();
     }
 }
