@@ -2,7 +2,7 @@
 
 A simple website for a fictional company that provides SEO services.
 
-This project is part of the responsive design course from [Scrimba](https://scrimba.com/). [Design specs](https://xd.adobe.com/spec/f255d364-6d5e-4aaf-7703-6f8d0a398281-8464/) and starter files are provided by [Kevin Powell](https://github.com/kevin-powell/reponsive-web-design-bootcamp/).
+This project is part of a course on [Scrimba](https://scrimba.com). [Design specs](https://xd.adobe.com/spec/f255d364-6d5e-4aaf-7703-6f8d0a398281-8464/) and starter files are provided by [Kevin Powell](https://github.com/kevin-powell/reponsive-web-design-bootcamp/).
 
 ## Implementation
 
@@ -25,7 +25,7 @@ External:
 
 ## Run locally
 
-Download the repo and open 'src/index.html' in the browser.
+Download the 'src' folder and open 'index.html' in the browser.
 
 ## Screenshots
 
