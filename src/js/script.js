@@ -1,3 +1,5 @@
+'use strict';
+
 const nav = document.querySelector('nav');
 const openNavBtn = document.getElementById('open-nav-btn');
 const closeNavBtn = nav.querySelector('.close-nav-btn');
