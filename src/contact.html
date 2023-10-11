@@ -20,7 +20,7 @@
                 <div class="grid nav-btn-container">
                     <button aria-label="close navigation" aria-controls="nav" class="nav-btn close-nav-btn" id="close-nav-btn">✖</button>
                 </div>
-                <ul class="nav-list">
+                <ul role="list" class="nav-list">
                     <li><a href="index.html" class="nav-link">home</a></li>
                     <li><a href="about.html" class="nav-link">about us</a></li>
                     <li><a href="contact.html" class="nav-link current-page">contact</a></li>
@@ -38,7 +38,7 @@
             <h2 class="underline-title">Getting in touch with us</h2>
             <p>You can either use the form or send us an email. We'll get back in touch with you as soon as possible!</p>
         </div>
-        <form class="contact-form" action="#" method="POST" aria-label="contact form.">
+        <form class="contact-form" action="#" method="POST" aria-label="contact">
             <label class="form-label-fname" for="form-first-name">First Name</label>
             <input class="form-input-fname" id="form-first-name" required>
             <label class="form-label-lname" for="form-last-name">Last Name</label>
@@ -48,13 +48,13 @@
             <button class="btn btn-form" type="submit">Send</button>
         </form>
     </main>
-    <footer class="grid container" aria-label="contact">
+    <footer class="grid container">
         <div class="footer-main">
             <img class="footer-logo-img" src="img/logo.png" alt="jake & elwood logo">
             <p><span class="sr-only">Jake & Elwood: </span>Two brothers from Chicago that are just trying to pay back their debt by helping others with their SEO, SEM, and Content Marketing needs.</p>
             <div class="footer-copyright">&copy; Jake&Elwood 2019</div>
         </div>
-        <ul class="footer-social-links">
+        <ul class="footer-social-links" role="list" aria-label="social links">
             <li><a href="https://facebook.com" class="social-link" aria-label="facebook"><i class="fa-brands fa-facebook-square"></i></a></li>
             <li><a href="https://twitter.com" class="social-link" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a></li>
             <li><a href="https://instagram.com" class="social-link" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
