@@ -1,6 +1,7 @@
 :root {
     --main-color: #FFE600;
     --btn-active-color: #ffd500;
+    --focus-visible-color: orange;
 }
 
 * {
@@ -28,7 +29,8 @@ body.js-no-scroll {
 }
 
 .js-focus-visible .focus-visible {
-    outline: 2px solid tomato;
+    outline: 3px dashed var(--focus-visible-color);
+    outline-offset: 2px;
 }
 
 @supports selector(:focus-visible) {
@@ -37,7 +39,8 @@ body.js-no-scroll {
     }
     
     :focus-visible {
-        outline: 2px solid tomato;
+        outline: 3px dashed var(--focus-visible-color);
+        outline-offset: 2px;
     }
 }
 
