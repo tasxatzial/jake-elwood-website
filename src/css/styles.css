@@ -154,12 +154,17 @@ img {
     justify-self: start;
 }
 
-.btn:hover {
-    transform: scale(1.05);
+@media (hover:hover) {
+    .btn:hover {
+        transform: scale(1.05);
+    }
 }
 
 .btn:active {
+    position: relative;
+    top: 1px;
     background-color: var(--btn-active-color);
+
 }
 
 /*=============== LINK ===============*/
@@ -232,11 +237,6 @@ form input,
 form textarea {
     padding: 0.4em;
     margin-bottom: .8em;
-}
-
-form input:focus,
-form textarea:focus {
-    outline: 2px solid black;
 }
 
 form textarea {
