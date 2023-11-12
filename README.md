@@ -12,13 +12,11 @@ This project is part of a course on [Scrimba](https://scrimba.com). [Design spec
 
 While my implementation follows the course content loosely, it also incorporates improvements that address most of the underlying issues.
 
-## Features
-
-* Hamburger menu for mobile.
-
 ## Dependencies
 
-External:
+The project is written in HTML, CSS, JavaScript.
+
+The following dependencies require an online connection:
 
 * [:focus-visible](https://github.com/WICG/focus-visible) polyfill.
 * [Font awesome](https://fontawesome.com/) icons.
