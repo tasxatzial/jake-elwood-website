@@ -1,14 +1,12 @@
 'use strict';
 
 const nav = document.querySelector('nav');
-const openNavBtn = document.getElementById('open-nav-btn');
-const closeNavBtn = nav.querySelector('.close-nav-btn');
+const toggleNavBtn = nav.querySelector('.nav-btn');
 const navLinks = nav.querySelectorAll('.nav-link');
 const mqList = window.matchMedia("(min-width: 52em)");
 let navShouldBeOpen = false;
 
-openNavBtn.addEventListener('click', openNav);
-closeNavBtn.addEventListener('click', closeNav);
+toggleNavBtn.addEventListener('click', toggleNav);
 mqList.addEventListener('change', toggleNavOnResize);
 
 /* trap keyboard navigation inside menu when it is open */
@@ -20,17 +18,35 @@ function navigateMenu(event) {
     }
     if (event.key === 'Tab' || event.keyCode === 9) {
         if (event.shiftKey) {
-            if (document.activeElement === closeNavBtn) {
+            if (document.activeElement === toggleNavBtn) {
                 navLinks[navLinks.length - 1].focus();
                 event.preventDefault();
             }
         } else {
             if (document.activeElement === navLinks[navLinks.length - 1]) {
-                closeNavBtn.focus();
+                toggleNavBtn.focus();
                 event.preventDefault();
             }
         }
     }
+}
+
+function toggleNav() {
+    document.body.classList.toggle('js-nav-open');
+    if (document.body.classList.contains('js-nav-open')) {
+        openNav();
+    } else {
+        closeNav();
+    }
+}
+
+function closeNav() {
+    document.body.classList.remove('js-nav-open', 'js-no-scroll');
+    toggleNavBtn.innerText = '☰';
+    toggleNavBtn.setAttribute('aria-label', 'open navigation');
+    toggleNavBtn.setAttribute('aria-expanded', 'false');
+    toggleNavBtn.focus();
+    navShouldBeOpen = false;
 }
 
 function openNav() {
@@ -38,22 +54,17 @@ function openNav() {
     if (document.documentElement.scrollHeight > document.documentElement.clientHeight) {
         document.body.classList.add('js-no-scroll');
     }
-    closeNavBtn.focus();
-}
-
-function closeNav() {
-    document.body.classList.remove('js-nav-open', 'js-no-scroll');
-    openNavBtn.focus();
-    navShouldBeOpen = false;
+    toggleNavBtn.innerText = '✖';
+    toggleNavBtn.setAttribute('aria-label', 'close navigation');
+    toggleNavBtn.setAttribute('aria-expanded', 'true');
+    toggleNavBtn.focus();
 }
 
 function toggleNavOnResize() {
     if (mqList.matches && document.body.classList.contains('js-nav-open')) {
         closeNav();
         navShouldBeOpen = true;
-        return;
-    }
-    if (navShouldBeOpen) {
+    } else if (navShouldBeOpen) {
         openNav();
     }
 }
