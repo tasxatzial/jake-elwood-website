@@ -163,7 +163,7 @@ a {
     background-color: var(--main-color);
 }
 
-.current-page {
+[aria-current="page"] {
     border-bottom: 2px solid var(--main-color);
 }
 
