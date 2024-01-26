@@ -114,10 +114,6 @@ img {
 
 /*=============== BUTTON ===============*/
 
-.nav-btn-container {
-    position: absolute;
-}
-
 .nav-btn {
     padding: 0.15em .25em 0.25em;
     border: 0;
@@ -501,10 +497,6 @@ footer {
 
     .open-nav-btn,
     .close-nav-btn {
-        display: none;
-    }
-
-    .nav-btn-container {
         display: none;
     }
 
