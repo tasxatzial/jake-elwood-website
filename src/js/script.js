@@ -24,7 +24,6 @@ function navigateMenu(event) {
             }
         } else {
             if (document.activeElement === navLinks[navLinks.length - 1]) {
-                toggleNavBtn.focus();
                 event.preventDefault();
             }
         }
@@ -45,7 +44,6 @@ function closeNav() {
     toggleNavBtn.innerText = '☰';
     toggleNavBtn.setAttribute('aria-label', 'open navigation');
     toggleNavBtn.setAttribute('aria-expanded', 'false');
-    toggleNavBtn.focus();
     navShouldBeOpen = false;
 }
 
@@ -57,7 +55,6 @@ function openNav() {
     toggleNavBtn.innerText = '✖';
     toggleNavBtn.setAttribute('aria-label', 'close navigation');
     toggleNavBtn.setAttribute('aria-expanded', 'true');
-    toggleNavBtn.focus();
 }
 
 function toggleNavOnResize() {
