@@ -24,6 +24,7 @@ function navigateMenu(event) {
             }
         } else {
             if (document.activeElement === navLinks[navLinks.length - 1]) {
+                toggleNavBtn.focus();
                 event.preventDefault();
             }
         }
