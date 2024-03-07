@@ -2,13 +2,13 @@
 
 A simple website for a fictional company that provides SEO services.
 
-This project is part of a course on [Scrimba](https://scrimba.com). [Design specs](https://xd.adobe.com/spec/f255d364-6d5e-4aaf-7703-6f8d0a398281-8464/) and starter files are provided by [Kevin Powell](https://github.com/kevin-powell/reponsive-web-design-bootcamp/).
+This project is part of a course on [Scrimba](https://scrimba.com). [Design specs](https://xd.adobe.com/spec/f255d364-6d5e-4aaf-7703-6f8d0a398281-8464/) and assets are provided by [Kevin Powell](https://github.com/kevin-powell/reponsive-web-design-bootcamp/).
 
 ## Implementation
 
 * Responsive.
 * Accessible + screen reader friendly.
-* Mobile first design.
+* Mobile first approach.
 
 While my implementation follows the course content loosely, it isn't an exact match of the design or the implementation shown in the course. I've made some intentional changes, with the aim of improving upon the provided design.
 
