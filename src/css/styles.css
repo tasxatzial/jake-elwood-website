@@ -270,9 +270,9 @@ h2 {
 .underline-title::after {
     content: "";
     display: block;
-    width: 4rem;
-    height: 3px;
-    margin-top: .25em;
+    width: 3.55em;
+    height: 0.15em;
+    margin-top: 0.25em;
     background-color: var(--main-color);
 }
 
