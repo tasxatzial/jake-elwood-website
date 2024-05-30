@@ -34,6 +34,10 @@ body.js-no-scroll {
     outline-offset: 2px;
 }
 
+.js-focus-visible .nav-btn.focus-visible{
+    outline-offset: -3px;
+}
+
 @supports selector(:focus-visible) {
     :focus:not(:focus-visible) {
         outline: none;
@@ -42,6 +46,10 @@ body.js-no-scroll {
     :focus-visible {
         outline: 3px dashed var(--focus-visible-color);
         outline-offset: 2px;
+    }
+
+    .nav-btn:focus-visible {
+        outline-offset: -3px;
     }
 }
 
